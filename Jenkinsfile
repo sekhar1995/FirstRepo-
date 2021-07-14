@@ -11,7 +11,7 @@ pipeline {
 
         stage('Build2') {
           steps {
-            bat 'echo Build2'
+            sh 'echo $Build2'
           }
         }
 
@@ -20,7 +20,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        bat 'echo Test'
+        sh 'echo $Test'
       }
     }
 
